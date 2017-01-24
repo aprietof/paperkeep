@@ -2,6 +2,7 @@
 
 white: #FFFFFF;
 black: #000000;
+blue:  FFFFFF;
 
 */
 
@@ -31,7 +32,7 @@ body {
 }
 
 .singin {
-  padding: 15px;
+  padding: 15px 25px 15px 15px;
   float: right;
 }
 
@@ -40,16 +41,41 @@ body {
   color: #000000;
 }
 
+.intro_video {
+  margin: 0 auto;
+  display: block;
+  max-height: 378px;
+}
 
+.video_info {
+  vertical-align: middle;
+}
 
+.video_info h1 {
+  font-size: 48px;
+}
 
+.center-text {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 
+input.info_button {
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 10px;
+  display: block;
+  background-color: #FFFFFF;
+  color: #0074bf;
+  border: 2px solid #0074bf;
+  transition: background-color 0.2s ease;
+}
 
-
-
-
-
-
+input.info_button:hover {
+  color: #FFFFFF;
+  background-color: #0074bf;
+}
 
 
 
@@ -60,12 +86,22 @@ body {
 /* Medium Screen */
 @media screen and (max-width: 768px) {
 
+  .intro_video {
+    max-height: 300;
+  }
+
+  .video_info h1 {
+    font-size: 30px;
+  }
 
 }
 
 /* Portrait Phone and Landscape */
 @media screen and (max-width: 540px) {
 
+  .intro_video {
+    max-height: 255px;
+  }
 
 
 }
