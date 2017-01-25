@@ -10,6 +10,7 @@ cream: #FFFBC2;
 /* ********* FONTS ********* */
 
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 * {
   -moz-box-sizing: border-box;
@@ -186,6 +187,65 @@ footer.nav-link {
   float: right;
 }
 
+/* ********* MODAL ********* */
+
+.modal {
+  font-family: 'Lato', sans-serif;
+  margin-top: 100px;
+}
+
+h3.modal-title {
+  margin-left: 15px;
+}
+
+.labels {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  float: left;
+  width: 30%;
+}
+
+.labels label {
+  padding-left: 25px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+label.mobile {
+  display: none;
+}
+
+.fields {
+  margin-top: 10px;
+  float: right;
+  width: 70%;
+}
+
+.fields input {
+  width: 80%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.fields input.checkbox {
+  width: 5%;
+  display: inline;
+}
+
+.info_button.modal-button {
+  float: left;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+.info_button.modal-button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+
 /* ********* MEDIA QUERIES ********* */
 
 /* Medium Screen */
@@ -225,6 +285,33 @@ footer.nav-link {
   .leyend {
     float: none;
     width: 100%;
+  }
+
+  .labels {
+    display: none;
+  }
+
+  .fields {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .fields input {
+    font-size: 13px;
+    margin-right: 0;
+    min-height: 40px;
+  }
+
+  label.mobile {
+    display: block;
+  }
+
+  .modal {
+    margin: 0;
+  }
+
+  .modal-body {
+    height: 100%;
   }
 
 }

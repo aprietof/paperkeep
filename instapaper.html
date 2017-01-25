@@ -45,7 +45,50 @@
       <h1 class="center_text no-border">Save Anything. Read Anywhere.</h1>
       <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
-          <input type="button" class="info_button" value="Create an Account">
+          <input type="button" class="info_button" value="Create an Account" data-toggle="modal" data-target="#myModal">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel"><strong>Create an Account</strong></h3>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="row">
+              <div class="labels">
+
+                <label for="email">Email </label><br />
+                <label for="password">Password </label>
+
+              </div>
+
+              <div class="fields">
+                <div class="row">
+
+                  <label class="mobile" for="email">Email </label>
+                  <input type="email" name="email" value=""><br />
+
+                  <label class="mobile" for="password">Password </label>
+                  <input type="password" name="password" value=""><br />
+
+                  <input class="checkbox" type="checkbox" name="keepme" value="" checked>
+                  <label for="email">Keep Me logged In </label><br />
+
+                  <input class="info_button modal-button" type="submit" name="submit" value="Create Account">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
@@ -121,7 +164,7 @@
       <h1 class="center_text no-border">Try Instapaper for Free</h1>
       <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
-          <input type="button" class="info_button" value="Create an Account">
+          <input type="button" class="info_button" value="Create an Account" data-toggle="modal" data-target="#myModal">
         </div>
       </div>
     </div>
@@ -156,7 +199,7 @@
 
   <!-- SCRIPTS -->
 
-  <script type="js/script.js"></script>
+  <script src="js/script.js"></script>
 
   </body>
 </html>
