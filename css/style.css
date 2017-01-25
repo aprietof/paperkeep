@@ -26,21 +26,21 @@ body {
 /* ********* NAV ********* */
 
 .nav {
-  padding-top: 10px;
   min-height: 57px;
 }
 
 .logo {
-  padding: 5px;
+  padding-left: 20px;
   float: left;
 }
 
 .nav a {
+  color: #2E9FFF;
   float: right;
 }
 
 .nav-link {
-  padding: 15px 25px 15px 15px;
+  padding: 20px 25px 15px 15px;
 }
 
 .nav-link a {
