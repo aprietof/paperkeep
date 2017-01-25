@@ -2,7 +2,8 @@
 
 white: #FFFFFF;
 black: #000000;
-blue:  FFFFFF;
+blue:  #2E9FFF;
+cream: #FFFBC2;
 
 */
 
@@ -20,6 +21,8 @@ body {
   font-family: 'Lekton', sans-serif;
   background-color: #FFFFFF;
 }
+
+/* NAV */
 
 .nav {
   padding-top: 10px;
@@ -39,6 +42,47 @@ body {
 .singin a {
   font-weight: bold;
   color: #000000;
+}
+
+/* SECTION */
+
+section {
+  min-height: 428px;
+}
+
+section {
+  padding-top: 40px;
+}
+
+section img {
+  margin: 0 auto;
+}
+
+section h1 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.margin-bottom {
+  margin-bottom: 30px;
+}
+
+.border-top {
+  border-top: 1px solid #ccc;
+}
+
+
+/* DESCRIPTION  */
+
+section.description {
+  padding-top: 0;
 }
 
 .intro_video {
@@ -67,17 +111,28 @@ input.info_button {
   padding: 10px;
   display: block;
   background-color: #FFFFFF;
-  color: #0074bf;
-  border: 2px solid #0074bf;
-  transition: background-color 0.2s ease;
+  color: #2E9FFF;
+  border: 2px solid #2E9FFF;
+  transition: background-color 0.3s ease;
 }
 
 input.info_button:hover {
   color: #FFFFFF;
-  background-color: #0074bf;
+  background-color: #2E9FFF;
 }
 
 
+/* SAVE */
+
+section.description h1 {
+  border-bottom: none;
+}
+
+/* CREATE */
+
+p span.highlighted {
+  background: #FFFBC2;
+}
 
 
 
