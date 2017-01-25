@@ -7,7 +7,7 @@ cream: #FFFBC2;
 
 */
 
-/* FONTS */
+/* ********* FONTS ********* */
 
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700');
 
@@ -22,7 +22,7 @@ body {
   background-color: #FFFFFF;
 }
 
-/* NAV */
+/* ********* NAV ********* */
 
 .nav {
   padding-top: 10px;
@@ -34,17 +34,20 @@ body {
   float: left;
 }
 
-.singin {
-  padding: 15px 25px 15px 15px;
+.nav a {
   float: right;
 }
 
-.singin a {
+.nav-link {
+  padding: 15px 25px 15px 15px;
+}
+
+.nav-link a {
   font-weight: bold;
   color: #000000;
 }
 
-/* SECTION */
+/* ********* SECTION ********* */
 
 section {
   min-height: 428px;
@@ -79,7 +82,7 @@ section p {
 }
 
 
-/* DESCRIPTION  */
+/* ********* DESCRIPTION ********* */
 
 section.description {
   padding-top: 0;
@@ -95,11 +98,11 @@ section.description {
   vertical-align: middle;
 }
 
-.video_info h1 {
+.header_info h1 {
   font-size: 48px;
 }
 
-.center-text {
+.center_text {
   text-align: center;
   margin-left: 15%;
   margin-right: 15%;
@@ -122,24 +125,72 @@ input.info_button:hover {
 }
 
 
-/* SAVE */
+/* ********* SAVE ********* */
 
-section.description h1 {
+section h1.no-border {
   border-bottom: none;
 }
 
-/* CREATE */
+/* ********* CREATE ********* */
 
 p span.highlighted {
   background: #FFFBC2;
 }
 
+/* ********* TRY ********* */
 
+section.try {
+  min-height: 241px;
+}
 
-/* MEDIA QUERIES */
+section.try h1.noborder {
+  font-size: xx-large;
+}
+
+.try {
+  padding-bottom: 60px;
+}
+
+/* ********* FOOTER ********* */
+
+footer {
+  text-align: center;
+}
+
+footer.nav-link {
+  margin-bottom: 30px;
+}
+
+.links {
+  float: left;
+  width: 60%;
+}
+
+.leyend {
+  float: right;
+  width: 40%;
+}
+
+.footer {
+  padding-bottom: 10px;
+}
+
+.footer a {
+  float: left;
+  margin: 3px auto;
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+
+.footer p {
+  float: right;
+}
+
+/* ********* MEDIA QUERIES ********* */
 
 /* Medium Screen */
 @media screen and (max-width: 768px) {
+
 
   .intro_video {
     max-height: 300;
@@ -147,6 +198,33 @@ p span.highlighted {
 
   .video_info h1 {
     font-size: 30px;
+  }
+
+  /* FOOTER */
+
+  footer.nav-link {
+    margin-bottom: 0;
+  }
+
+  .footer a {
+    float: none;
+    margin-top: 0px;
+  }
+
+  .footer p.copy {
+    margin-top: 15px;
+    float: none;
+    text-align: center;
+  }
+
+  .links {
+    float: none;
+    width: 100%;
+  }
+
+  .leyend {
+    float: none;
+    width: 100%;
   }
 
 }
@@ -158,5 +236,8 @@ p span.highlighted {
     max-height: 255px;
   }
 
+  .footer {
+    padding-bottom: 10px;
+  }
 
 }
