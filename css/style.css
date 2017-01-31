@@ -86,15 +86,15 @@ section.description {
   padding-top: 0;
 }
 
-.intro_video {
+.animation {
   margin: 0 auto;
-  display: block;
-  max-height: 378px;
 }
 
-.video_info {
-  vertical-align: middle;
+.animation img {
+    margin: 0 auto;
+    max-height: 300px
 }
+
 
 .header_info h1 {
   font-size: 48px;
