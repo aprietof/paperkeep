@@ -9,9 +9,6 @@ cream: #FFFBC2;
 
 /* ********* FONTS ********* */
 
-@import url('https://fonts.googleapis.com/css?family=Lekton:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -325,6 +322,20 @@ label.mobile {
 
   .footer {
     padding-bottom: 10px;
+  }
+
+}
+
+/* Portrait Phone and Landscape */
+@media screen and (max-width: 320px) {
+
+  .intro_video {
+    max-height: 200px;
+    margin: 0 auto;
+  }
+
+  section h1.no-border {
+    font-size: xx-large;
   }
 
 }
